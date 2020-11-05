@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost" >
+
+    <TabWidget
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@android:id/tabs"
+        android:background="#67687C"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/tabcontent" >
+
+            <RelativeLayout
+                android:id="@+id/Tomatinho"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:paddingTop="20dp"
+                android:orientation="vertical"
+                android:background="#32333C">
+
+                <Chronometer
+                    android:id="@+id/chronometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#C1C3D5"/>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:hint="Começar"
+                    android:onClick="startChronometer"
+                    android:textSize="30dp"
+                    android:background="#7B7D93"
+                    android:textColorHint="#DBDDED"/>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="pauseChronometer"
+                    android:layout_marginTop="160dp"
+                    android:hint="Pausar"
+                    android:textSize="30dp"
+                    android:background="#CE67687C"
+                    android:textColorHint="#DBDDED"/>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="220dp"
+                    android:onClick="resetChronometer"
+                    android:hint="Reiniciar"
+                    android:textSize="30dp"
+                    android:background="#8A67687C"
+                    android:textColorHint="#DBDDED"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#292D40"
+                android:id="@+id/Pausa_Curta"
+                android:paddingTop="20dp"
+                android:layout_marginTop="60dp" >
+
+                <Chronometer
+                    android:id="@+id/chronometer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="50sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#C1C3D5"/>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:onClick="validate2"
+                    android:hint="Começar"
+                    android:textSize="30dp"
+                    android:textColorHint="#C1C3D5"
+                    android:background="#4B5273"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1F2543"
+                android:id="@+id/Pausa_Longa"
+                android:paddingTop="20dp"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical" >
+
+                <Chronometer
+                    android:id="@+id/chronometer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#C1C3D5" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:onClick="validate3"
+                    android:hint="Começar"
+                    android:textSize="30dp"
+                    android:textColorHint="#C1C3D5"
+                    android:background="#374177"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+    </TabHost>
